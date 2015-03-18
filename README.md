@@ -15,7 +15,7 @@ bind that adds (row by row) the 'test' data to the bottom of the 'train' data.
 6. Only variables that contain mean and standard deviation are required, these are subsetted into a new data frame using the grepl function, pattern matching on 'subject' or 'activity' or '\.\*mean\.\*' or '\.\*std\.\*' - selecting all variables which are either 'subject', 'activity' or contain the word 'mean' or 'std'
 7. The 'activity' variable is an integer (1-6), this is transformed to a label. To do this the 'activity' variable is changed to the class 'factor' with the levels corresponding to appropiate label using the key in 'activity_labels.txt'
 8. Variable names are tidyed using the make.names function, which makes the variable names syntactically correct (i.e., using '\.' instead of invalid characters (anything not a letter, number, '\_' or '\.')), excess '\.'s are removed using the function, gsub, with the pattern '\\.\\.' ('\.'s require escaping)
-9. The data is then grouped according to 'subject' variable and then 'activity' variable (using dplyr groupby), and summary table of means of each measured variable(including mean or std in variable name) for each combination of subject and activity is produced using the dplyr function, summarise.
+9. The data is then grouped according to 'subject' variable and then 'activity' variable (using dplyr groupby), and a summary table (*named 'summary'*) of means of each measured variable(including mean or std in variable name) for each combination of subject and activity is produced using the dplyr function, summarise.
 
 Also see comments in script for walkthrough, and codebook.md
 
