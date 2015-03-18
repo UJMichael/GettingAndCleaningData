@@ -1,10 +1,11 @@
 # Instructions for using run_analysis.R
 
 - Raw data input is the unzipped (preserving directory structure and naming) contents of 'https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip'
-- dataset contains two sets of data, 'train' and 'test', see README in dataset
+- dataset contains two sets of data, 'train' and 'test', see 'README.txt' in dataset
 
 - Working directory is required to be in '/UCI HAR Dataset'
-- dplyr is required
+- dplyr package is required
+- R version 3.1.3 was used
 
 1. Names for variables are stored in dataset ('features.txt'), these are loaded (unchanged) into R as a vector ('colNames')
 2. Data is read from 'X_train.txt' using the function read.table, this creates a data frame ('table') with variables named using 'colNames'.
