@@ -1,5 +1,6 @@
 ##run_analysis.R
-
+#load dplyr
+library(dplyr)
 
 #replace **** with path to dataset unzipped  
 setwd('****/UCI HAR Dataset')
